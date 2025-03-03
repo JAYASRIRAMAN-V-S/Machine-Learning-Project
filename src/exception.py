@@ -1,6 +1,6 @@
 # To manage exceptions in the program
 import sys
-
+from src.logger import logging
 
 def error_message_details(error, error_detail: sys):
     """Returns detailed error message including file name, line number, and error message."""
@@ -24,4 +24,3 @@ class CustomException(Exception):  # Fixed spelling of "CustomException"
 
     def __str__(self):
         return self.error_message
-
